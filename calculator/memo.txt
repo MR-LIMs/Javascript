@@ -1,0 +1,27 @@
+event : operator or excutant click! {
+  if (입력값이 있는가?) {
+    if (operator인가?) {
+      if tempValue == null {
+        tempValue = input.value
+        operator = operator.value
+      } else {
+        tempValue = tempValue _operator_ input.value
+      }
+    } else if (calculate인가?){
+      tempValue = tempValue _operator_ input.value
+    } else if (clear인가?) {
+      input.value = null
+    } else ([reset인가?]) {
+      input.value = null
+      array.claer()
+    }
+  } else {
+    무시
+  }
+}
+
+* 문자열과 숫자의 연산
+  + => 문자열로 변환
+  -, *, / => 숫자로 변환
+
+* 반복과 중복의 제어가 굉장히 중요하다.

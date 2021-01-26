@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      width:180px;
+      height:50px;
+      padding:0;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align:middle;
+      border: 1px solid;
+      width:180px;
+      height:50px;
+    }
+
+    button{
+      width:50px;
+      height:50px;
+      margin:5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-box">
+    <input type="number" class="input"/>
+    <button class="clear">C</button>
+  </div>
+  <div class="operator-box">
+    <button class="plus">+</button>
+    <button class="minus">-</button>
+    <button class="divide">/</button>
+    <button class="multiply">x</button>
+  </div>
+  <div class="result-box">
+    <button class="calculate">=</button>
+    <span class="result"></span>
+    <button class="reset">reset</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

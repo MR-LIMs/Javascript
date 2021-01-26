@@ -19,4 +19,10 @@
   }
 })
 
-* value vs textContent : input만 value, 나머지는 textContent
+* querySelctor().value vs querySelctor().textContent 
+  : input만 value, 나머지는 textContent
+
+* 동기 : 요청을 보낸 후 해당 응답을 받아야 다음 동작을 실행
+  => A요청 -> A결과 -> B요청 -> B결과 -> C요청 -> C결과 -> D요청 -> D결과 ->  . . .
+  비동기 : 요청을 보낸 후 응답에 관계 없이 다음 동작을 실행
+  => A요청 -> B요청 -> A결과 -> C요청 -> D요청 -> B결과 -> D결과 -> C결과 -> . . .
