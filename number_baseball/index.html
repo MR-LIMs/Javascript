@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #start {
+      width:205px;
+      height:30px;
+    }
+    #guide, #suggestValue {
+      display:inline-block;
+      width:203px;
+      height:30px;
+      border: 1px solid;
+    }
+    span {
+      border: 1px solid;
+      display:inline-block;
+    }
+    #log {
+      width:155px;
+      height:200px;
+    }
+    #user-input {
+      width:40px;
+      height:200px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="game-start">
+    <button id="start">시작</button>
+  </div>
+  <div id="suggest-box">
+    <span id="suggestValue"></span>
+  </div>
+  <div id="guide-box">
+    <span id="guide"></span>
+  </div>
+  <div>
+    <input id="input" type="number" minlength="4" maxlength="4">
+    <button id="check">확인</button>
+  </div>
+  <div id="logs">
+    <span id="user-input"></span>
+    <span id="log"></span>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
