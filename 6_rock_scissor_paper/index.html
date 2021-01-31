@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #start-btn {
+      width: 148px;
+    }
+
+    #btn-box {
+      height:40px;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    div { 
+      width: 148px;
+      height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <button id="start-btn">시작</button>
+  <div id="computer"></div>
+  <div id="btn-box">
+    <button id="rock" class="btn">바위</button>
+    <button id="scissors" class="btn">가위</button>
+    <button id="paper" class="btn">보</button>
+  </div>
+  <div id="score-board"></div>
+  <div id="score"></div>
+  <script src="index.js"></script>
+</body>
+</html>

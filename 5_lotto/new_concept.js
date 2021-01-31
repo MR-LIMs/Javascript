@@ -37,3 +37,5 @@ const winBalls = arr.slice(0, 6); // 0 ~ 5번까지
 
 // setTimeout method
 setTimeout(() => {명령문}, 1000)  // 1초 뒤에 명령문을 실행하라.
+
+// foreach vs map
